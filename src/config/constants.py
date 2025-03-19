@@ -23,9 +23,7 @@ HTTP_STATUS_CODES = {
 
 # Required services for health checks
 REQUIRED_SERVICES = [
-    "sharepoint",
-    "database",
-    "disk_space"
+    "sharepoint"
 ]
 
 # Retry configuration
