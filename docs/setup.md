@@ -18,7 +18,7 @@ Before you begin, ensure you have:
 ### Clone the Repository
 
 ```bash
-git clone https://your-repository-url/PastPerformanceDatabase.git
+git clone https://github.com/dbrown540/PastPerformanceDatabase
 cd PastPerformanceDatabase
 ```
 

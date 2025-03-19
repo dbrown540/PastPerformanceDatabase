@@ -1,12 +1,17 @@
+"""
+function_app.py
+Entry point for the application.
+"""
+from src.functions.main_function import main
+
 import logging
 import azure.functions as func
 
 app = func.FunctionApp()
 
-@app.timer_trigger(schedule="0 0 * * * *", arg_name="myTimer", run_on_startup=False,
+@app.timer_trigger(schedule="*/5 * * * * *", arg_name="myTimer", run_on_startup=False,
               use_monitor=False) 
 def PP_DatabaseUpdater(myTimer: func.TimerRequest) -> None:
-    if myTimer.past_due:
-        logging.info('The timer is past due!')
-
+    
+    main()
     logging.info('Python timer trigger function executed.')

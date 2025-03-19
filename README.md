@@ -85,6 +85,10 @@ Contains test code:
 - **integration/**: Integration tests that verify cross-component functionality
 - **fixtures/**: Test data and mock objects
 
+### tests/unit/
+ - **test_authentication.py**: Tests third-party API authentication
+ - **test_health_check.py**: Tests internal and external dependencies and systems used pre-execution
+
 ### scripts/
 
 Contains utility scripts:
